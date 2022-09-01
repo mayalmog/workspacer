@@ -7,7 +7,7 @@ Admin can login, book and also remove any bookings, and add consecutive weeks.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Technologies used: redux-toolkit, scss.
 
-Link to deployed website: [a link](https://mayalmog.github.io/workspacer-2)
+Link to deployed website: [Workspacer](https://mayalmog.github.io/workspacer-2)
 
 ## Available Scripts
 
