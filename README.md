@@ -5,6 +5,7 @@ Users can login, book a desk by choosing a week and a weekday, and cancel their 
 Admin can login, book and also remove any bookings, and add consecutive weeks.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Technologies used: redux-toolkit, scss.
 
 ## Available Scripts
 
