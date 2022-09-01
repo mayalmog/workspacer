@@ -26,9 +26,11 @@ export const LoginPage = () => {
 
   const onLoggedinUser = (ev) => {
     ev.preventDefault();
-    navigate("/desk");
-    const user = userService.onLoginUser(userName);
-    dispatch(setLoggedinUser(user));
+    if (userName) {
+      navigate("/desk");
+      const user = userService.onLoginUser(userName);
+      dispatch(setLoggedinUser(user));
+    }
   };
 
   const handleChangeAdmin = ({ target }) => {

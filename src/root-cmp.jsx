@@ -18,6 +18,7 @@ export const RootCmp = () => {
     dispatch(setWeek(weekStartDate));
     dispatch(setUsers());
   }, [dispatch]);
+
   return (
     <section className="root-cmp">
       <AppHeader />

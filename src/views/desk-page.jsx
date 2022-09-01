@@ -1,6 +1,6 @@
 import { MenuItem, Select, InputLabel, FormControl } from "@mui/material";
-
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setWeeks, setWeek } from "../store/desk/deskSlice";
 import { deskService } from "../services/desk.service";
@@ -13,6 +13,11 @@ export const DeskPage = () => {
   const [currDayName, setCurrDayName] = useState("Sunday");
   const currDay = deskService.getCurrDay(week, currDayName);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!loggedinUser) navigate("/");
+  }, []);
 
   const onSetCurrDay = (dayName) => {
     setCurrDayName(dayName);
