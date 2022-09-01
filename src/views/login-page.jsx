@@ -1,5 +1,5 @@
 import { MenuItem, Select, InputLabel, FormControl } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { setLoggedinUser } from "../store/user/userSlice";
