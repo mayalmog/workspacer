@@ -56,7 +56,7 @@ export const DeskPage = () => {
             })}
           </Select>
         </FormControl>
-        {loggedinUser?.email === "admin@fireblocks.com" && (
+        {loggedinUser?.email === "admin@feuerblocks.com" && (
           <button
             className="btn btn-primary add-week-btn"
             onClick={onAddNextWeek}

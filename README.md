@@ -10,7 +10,7 @@ Technologies used: redux-toolkit, scss.
 Link to deployed website: [Workspacer](https://mayalmog.github.io/workspacer-2)
 
 For login as admin:
-Email: admin@fireblocks.com
+Email: admin@feuerblocks.com
 Password: 123456789
 
 ## Available Scripts

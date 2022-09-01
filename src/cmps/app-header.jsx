@@ -26,7 +26,7 @@ export const AppHeader = () => {
       </Link>
       {loggedinUser && (
         <div className="user-actions flex align-center justify-end full">
-          {loggedinUser.email !== "admin@fireblocks.com" && (
+          {loggedinUser.email !== "admin@feuerblocks.com" && (
             <MemberAvatar size={"32"} user={loggedinUser} />
           )}
           <p> {loggedinUser.fullname}</p>

@@ -24,7 +24,7 @@ function onLoginUser(userName) {
 
 function validateAdmin(adminInput, passwordInput) {
   if (
-    adminInput.email === "admin@fireblocks.com" &&
+    adminInput.email === "admin@feuerblocks.com" &&
     passwordInput.password === "123456789"
   )
     return true;

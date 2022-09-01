@@ -29,7 +29,7 @@ export const DeskPreview = ({ desk, currDay }) => {
   };
 
   const isLoggedinUserAdmin = () => {
-    return loggedinUser?.email === "admin@fireblocks.com";
+    return loggedinUser?.email === "admin@feuerblocks.com";
   };
 
   const isRemoveBtnShown = () => {
@@ -50,7 +50,7 @@ export const DeskPreview = ({ desk, currDay }) => {
       } desk-preview flex column align-center justify-center`}
     >
       <p className="desk-id">Desk-{desk.id}</p>
-      {desk.user && desk.user.email !== "admin@fireblocks.com" && (
+      {desk.user && desk.user.email !== "admin@feuerblocks.com" && (
         <MemberAvatar size={"32"} user={desk.user} />
       )}
 
