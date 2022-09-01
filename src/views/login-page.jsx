@@ -53,49 +53,53 @@ export const LoginPage = () => {
 
   return (
     <section className="login-page flex column justify-center align-center">
-      <h5>Choose your name:</h5>
+      <h3>Welcome to Workspacer!</h3>
+      <h4>Please login to your account</h4>
+      <div className="login-container">
+        <h5>Choose your name:</h5>
 
-      <FormControl fullWidth className="select">
-        <InputLabel id="users">User</InputLabel>
-        <Select
-          name="users"
-          id="users"
-          label="User"
-          onChange={handleChange}
-          defaultValue=""
-        >
-          {users.map((user) => {
-            return (
-              <MenuItem value={user.fullname} key={user.id}>
-                {user.fullname}
-              </MenuItem>
-            );
-          })}
-        </Select>
-        <button className="btn btn-primary" onClick={onLoggedinUser}>
-          Login
-        </button>
-      </FormControl>
+        <FormControl fullWidth className="select">
+          <InputLabel id="users">User</InputLabel>
+          <Select
+            name="users"
+            id="users"
+            label="User"
+            onChange={handleChange}
+            defaultValue=""
+          >
+            {users.map((user) => {
+              return (
+                <MenuItem value={user.fullname} key={user.id}>
+                  {user.fullname}
+                </MenuItem>
+              );
+            })}
+          </Select>
+          <button className="btn btn-primary" onClick={onLoggedinUser}>
+            Login
+          </button>
+        </FormControl>
 
-      <hr />
-      <form className="flex column justify-center align-center">
-        <label htmlFor="adminEmail">Or login as Admin:</label>
-        <input
-          type="email"
-          name="adminEmail"
-          placeholder="Email"
-          onChange={handleChangeAdmin}
-        />
-        <input
-          type="password"
-          name="adminPassword"
-          placeholder="Password"
-          onChange={handleChangeAdmin}
-        />
-        <button className="btn btn-primary" onClick={onLoggedinAdmin}>
-          Login as Admin
-        </button>
-      </form>
+        <hr />
+        <h5>Or login as admin:</h5>
+        <form className="flex column justify-center align-center">
+          <input
+            type="email"
+            name="adminEmail"
+            placeholder="Email"
+            onChange={handleChangeAdmin}
+          />
+          <input
+            type="password"
+            name="adminPassword"
+            placeholder="Password"
+            onChange={handleChangeAdmin}
+          />
+          <button className="btn btn-primary" onClick={onLoggedinAdmin}>
+            Login as Admin
+          </button>
+        </form>
+      </div>
     </section>
   );
 };
