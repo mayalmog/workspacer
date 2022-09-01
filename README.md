@@ -2,12 +2,16 @@
 
 This project is a desk booking system, with 8 desks and 10 users, plus admin.
 Users can login, book a desk by choosing a week and a weekday, and cancel their own bookings.
-Admin can login, book and also remove any bookings, and add consecutive weeks.
+Admin can login, book multiple deskd and also remove any bookings, and add consecutive weeks.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Technologies used: redux-toolkit, scss.
 
 Link to deployed website: [Workspacer](https://mayalmog.github.io/workspacer-2)
+
+For login as admin:
+Email: admin@fireblocks.com
+Password: 123456789
 
 ## Available Scripts
 
