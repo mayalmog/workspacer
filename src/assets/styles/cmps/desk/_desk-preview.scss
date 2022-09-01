@@ -10,11 +10,27 @@
   &.desk-1 {
     border-top-left-radius: 40%;
   }
+  &.desk-2 {
+    @include for-mobile-layout {
+      border-top-right-radius: 40%;
+    }
+  }
   &.desk-4 {
     border-top-right-radius: 40%;
+    @include for-mobile-layout {
+      border-top-right-radius: 8px;
+    }
   }
   &.desk-5 {
     border-bottom-left-radius: 40%;
+    @include for-mobile-layout {
+      border-bottom-left-radius: 8px;
+    }
+  }
+  &.desk-7 {
+    @include for-mobile-layout {
+      border-bottom-left-radius: 40%;
+    }
   }
   &.desk-8 {
     border-bottom-right-radius: 40%;
