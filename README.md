@@ -13,13 +13,6 @@ For login as admin:
 Email: admin@fireblocks.com
 Password: 123456789
 
-<h2>Showcase</h2>
-
-   <h3>Homepage login</h3>
-   ![ScreenShot](/user-images/login-page.png)
-   </br>
-   
-
 ## Available Scripts
 
 In the project directory, you can run:
